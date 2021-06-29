@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/core/hash_utils.h
+stdint.h
+-
+cstddef
+-
+functional
+-
+
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/geometry_metadata.cc
+draco/metadata/geometry_metadata.h
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/draco/metadata/geometry_metadata.h
+utility
+-
+
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/geometry_metadata.h
+draco/metadata/metadata.h
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/draco/metadata/metadata.h
+
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/metadata.cc
+draco/metadata/metadata.h
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/draco/metadata/metadata.h
+utility
+-
+
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/metadata.h
+cstring
+-
+map
+-
+memory
+-
+string
+-
+vector
+-
+draco/core/hash_utils.h
+/Users/camel/work/bszhct/demo-draco/draco/src/draco/metadata/draco/core/hash_utils.h
+

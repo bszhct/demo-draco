@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <input type="file" name="file" id="input" multiple="multiple" />
+    <button id="upload">上传</button>
+    <div style="color: #666; font-size: 12px; margin-top: 4px;">需要上传完整的 obj 模型数据，包含 obj、mtl、png/jpg</div>
+
+    <script src="//cdn.jsdelivr.net/npm/axios@0.19.2/dist/axios.min.js"></script>
+    <script>
+      document.querySelector('#upload').onclick = () => {
+        const input = document.querySelector('#input')
+        const files = input.files
+        const formData = new FormData()
+
+        for (let i = 0; i < files.length; i++) {
+          formData.append('files', files[i])
+        }
+        const url = '/drc'
+        const headers = {
+          'Content-Type': 'multipart/form-data'
+        }
+        axios.post(url, formData, {headers})
+      }
+    </script>
+  </body>
+</html>
